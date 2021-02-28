@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.15.0" />
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\Commands\Accounts\LoginCommandTests\" />
+    <Folder Include="Application\Commands\BookLoans\BookLoanCommandTests\" />
+    <Folder Include="Application\Commands\BookLoans\BookReturnCommandTests\" />
+    <Folder Include="Application\Commands\Books\CreateBookCommandTests\" />
+    <Folder Include="Application\Commands\Books\DeleteBookCommandTests\" />
+    <Folder Include="Application\Commands\Books\UpdateBookCommandTests\" />
+    <Folder Include="Application\Commands\Readers\CreateReaderCommandTests\" />
+    <Folder Include="Application\Commands\Readers\DeleteReaderCommandTests\" />
+    <Folder Include="Application\Commands\Readers\UpdateReaderCommandTests\" />
+    <Folder Include="Application\DomainEventHandlers\" />
+    <Folder Include="Application\Validators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Library.Application\Library.Application.csproj" />
+    <ProjectReference Include="..\Library.Domain\Library.Domain.csproj" />
+    <ProjectReference Include="..\Library.Infrastructure\Library.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
