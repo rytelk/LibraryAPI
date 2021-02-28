@@ -2,7 +2,7 @@
 
 ## Building and running application - Docker
 
-1. Open terminal in the root folder where docker-compose.yml file is located.
+1. Open terminal in the root folder where `docker-compose.yml` file is located.
 2. Run `docker-compose up` command
 3. API is exposed at `5000` port, use `http://localhost:5000/swagger/index.html` url to open API Swagger. SQL server is exposed at `14333` port, use `localhost,14333` server name and `sa : p@ssword1` credentials to connect to the server.
 
